@@ -3,23 +3,31 @@
 <head>
     <meta charset="UTF-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-    <title>Arun Pandi - Portfolio</title>
+    <title>Arun Pandi S - Web Developer Portfolio</title>
     <link rel="stylesheet" href="style.css" />
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.0/css/all.min.css" />
+    <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;500;600;700;800;900&display=swap" rel="stylesheet" />
 </head>
 <body>
+    <!-- Custom Cursor -->
+    <div class="cursor"></div>
+    <div class="cursor-follower"></div>
+
     <!-- Navigation -->
-    <nav>
+    <nav class="navbar">
         <div class="nav-container">
-            <h1 class="logo">ARUN PANDI S</h1>
+            <h1 class="logo">
+                <span class="logo-text">&lt;</span>
+                Arun Pandi
+                <span class="logo-text">/&gt;</span>
+            </h1>
             <ul class="nav-links">
-                <li><a href="#home">Home</a></li>
-                <li><a href="#about">About</a></li>
-                <li><a href="#skills">Skills</a></li>
-                <li><a href="#projects">Projects</a></li>
-                <li><a href="#experience">Experience</a></li>
-                <li><a href="#education">Education</a></li>
-                <li><a href="#contact">Contact</a></li>
+                <li><a href="#home" class="nav-link active">Home</a></li>
+                <li><a href="#about" class="nav-link">About</a></li>
+                <li><a href="#skills" class="nav-link">Skills</a></li>
+                <li><a href="#experience" class="nav-link">Experience</a></li>
+                <li><a href="#projects" class="nav-link">Projects</a></li>
+                <li><a href="#contact" class="nav-link">Contact</a></li>
             </ul>
             <div class="hamburger">
                 <span></span>
@@ -31,271 +39,582 @@
 
     <!-- Hero Section -->
     <section id="home" class="hero">
+        <div class="hero-background">
+            <div class="floating-shapes">
+                <div class="shape shape-1"></div>
+                <div class="shape shape-2"></div>
+                <div class="shape shape-3"></div>
+                <div class="shape shape-4"></div>
+            </div>
+        </div>
         <div class="hero-container">
             <div class="hero-content">
-                <h2>Hi, I'm <span>Arun Pandi S</span></h2>
-                <h3>Full Stack Developer</h3>
-                <p>Building innovative solutions for the web</p>
+                <div class="hero-badge">
+                    <span class="badge-dot"></span>
+                    Available for work
+                </div>
+                <h1 class="hero-title">
+                    Hi, I'm <span class="highlight">Arun Pandi</span>
+                </h1>
+                <h2 class="hero-subtitle">
+                    <span class="typed-text"></span>
+                    <span class="cursor-blink">|</span>
+                </h2>
+                <p class="hero-description">
+                    Full Stack Developer passionate about building innovative web solutions
+                    with clean code and modern technologies.
+                </p>
                 <div class="hero-buttons">
-                    <a href="#projects" class="btn-primary">View My Work</a>
-                    <a href="#contact" class="btn-secondary">Contact Me</a>
+                    <a href="#projects" class="btn-primary">
+                        <i class="fas fa-code"></i>
+                        View My Work
+                    </a>
+                    <a href="#contact" class="btn-secondary">
+                        <i class="fas fa-paper-plane"></i>
+                        Hire Me
+                    </a>
+                </div>
+                <div class="hero-stats">
+                    <div class="stat-item">
+                        <span class="stat-number" data-count="3">0</span>
+                        <span class="stat-label">Years Experience</span>
+                    </div>
+                    <div class="stat-item">
+                        <span class="stat-number" data-count="25+">0</span>
+                        <span class="stat-label">Projects Delivered</span>
+                    </div>
+                    <div class="stat-item">
+                        <span class="stat-number" data-count="15">0</span>
+                        <span class="stat-label">Happy Clients</span>
+                    </div>
                 </div>
                 <div class="social-links">
-                    <a href="https://github.com/arunpandi17" target="_blank"><i class="fab fa-github"></i></a>
-                    <a href="https://in.linkedin.com/in/arun-pandi-s-a4a416253" target="_blank"><i class="fab fa-linkedin"></i></a>
-                    <a href="https://x.com/arunpandi68" target="_blank"><i class="fab fa-twitter"></i></a>
+                    <a href="https://github.com/arunpandi17" target="_blank" class="social-link">
+                        <i class="fab fa-github"></i>
+                    </a>
+                    <a href="https://in.linkedin.com/in/arun-pandi-s-a4a416253" target="_blank" class="social-link">
+                        <i class="fab fa-linkedin-in"></i>
+                    </a>
+                    <a href="https://x.com/arunpandi68" target="_blank" class="social-link">
+                        <i class="fab fa-twitter"></i>
+                    </a>
+                    <a href="mailto:arunpandi.webdev@gmail.com" class="social-link">
+                        <i class="fas fa-envelope"></i>
+                    </a>
                 </div>
             </div>
-            <div class="hero-image">
-                <img src="src/ArunblackShirt.png" alt="Profile" />
+            <div class="hero-image-wrapper">
+                <div class="hero-image">
+                    <img src="src/ArunPro.png" alt="Arun Pandi" />
+                    <div class="image-ring"></div>
+                </div>
+                <div class="floating-card card-1">
+                    <i class="fas fa-code"></i>
+                    <span>Full Stack</span>
+                </div>
+                <div class="floating-card card-2">
+                    <i class="fas fa-database"></i>
+                    <span>Backend</span>
+                </div>
+                <div class="floating-card card-3">
+                    <i class="fas fa-paint-brush"></i>
+                    <span>Frontend</span>
+                </div>
             </div>
+        </div>
+        <div class="scroll-indicator">
+            <span>Scroll</span>
+            <div class="scroll-line"></div>
         </div>
     </section>
 
     <!-- About Section -->
     <section id="about" class="about">
         <div class="container">
-            <h2 class="section-title">About Me</h2>
+            <div class="section-header">
+                <span class="section-tag">About Me</span>
+                <h2 class="section-title">Who I Am</h2>
+                <div class="section-line"></div>
+            </div>
             <div class="about-content">
-                <p>I'm a passionate Full Stack Developer with experience in building web applications using Angular, Node.js, PHP, and SQL Server. I love creating clean, efficient, and user-friendly solutions.</p>
-                <div class="about-info">
-                    <div><strong>Name:</strong> Arun Pandi S</div>
-                    <div><strong>Email:</strong> arunpandi.webdev@gmail.com</div>
-                    <div><strong>Location:</strong> Coimbatore, India</div>
-                    <div><strong>Experience:</strong> 2+ Years</div>
+                <div class="about-text">
+                    <p class="about-intro">
+                        I'm a passionate <strong>Full Stack Developer</strong> with 3+ years of experience
+                        in building scalable web applications using modern technologies.
+                    </p>
+                    <p>
+                        I specialize in creating clean, efficient, and user-friendly solutions
+                        that solve real-world problems. My expertise spans across frontend,
+                        backend, and database technologies.
+                    </p>
+                    <div class="about-info-grid">
+                        <div class="about-info-item">
+                            <i class="fas fa-user"></i>
+                            <div>
+                                <strong>Name</strong>
+                                <span>Arun Pandi S</span>
+                            </div>
+                        </div>
+                        <div class="about-info-item">
+                            <i class="fas fa-envelope"></i>
+                            <div>
+                                <strong>Email</strong>
+                                <span>arunpandi.webdev@gmail.com</span>
+                            </div>
+                        </div>
+                        <div class="about-info-item">
+                            <i class="fas fa-map-marker-alt"></i>
+                            <div>
+                                <strong>Location</strong>
+                                <span>Coimbatore, India</span>
+                            </div>
+                        </div>
+                        <div class="about-info-item">
+                            <i class="fas fa-briefcase"></i>
+                            <div>
+                                <strong>Experience</strong>
+                                <span>3+ Years</span>
+                            </div>
+                        </div>
+                    </div>
+                    <a href="#contact" class="btn-primary">
+                        <i class="fas fa-paper-plane"></i>
+                        Let's Connect
+                    </a>
+                </div>
+                <div class="about-image">
+                    <img src="src/Arun17.png" alt="About Me" />
+                    <div class="about-experience-badge">
+                        <span class="exp-number">3+</span>
+                        <span class="exp-label">Years Experience</span>
+                    </div>
                 </div>
             </div>
         </div>
     </section>
 
-<!-- Skills Section -->
-<section id="skills" class="skills">
-    <div class="container">
-        <h2 class="section-title">Technical Skills</h2>
-        
-        <div class="skill-category">
-            <h3>Frontend</h3>
-            <div class="skills-grid">
-                <div class="skill-card">
-                    <i class="fab fa-html5"></i>
-                    <h3>HTML5</h3>
-                    <div class="skill-bar">
-                        <div class="skill-progress" style="width: 90%"></div>
+    <!-- Skills Section -->
+    <section id="skills" class="skills">
+        <div class="container">
+            <div class="section-header">
+                <span class="section-tag">My Skills</span>
+                <h2 class="section-title">Technical Expertise</h2>
+                <div class="section-line"></div>
+            </div>
+            <div class="skills-tabs">
+                <button class="tab-btn active" data-tab="frontend">Frontend</button>
+                <button class="tab-btn" data-tab="backend">Backend</button>
+                <button class="tab-btn" data-tab="tools">Tools & Others</button>
+            </div>
+            <div class="skills-content">
+                <!-- Frontend Skills -->
+                <div class="skills-panel active" id="frontend">
+                    <div class="skills-grid">
+                        <div class="skill-card">
+                            <div class="skill-icon"><i class="fab fa-html5"></i></div>
+                            <div class="skill-info">
+                                <h3>HTML5</h3>
+                                <div class="skill-bar">
+                                    <div class="skill-progress" style="width: 90%">
+                                        <span class="skill-percent">90%</span>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="skill-card">
+                            <div class="skill-icon"><i class="fab fa-css3-alt"></i></div>
+                            <div class="skill-info">
+                                <h3>CSS3</h3>
+                                <div class="skill-bar">
+                                    <div class="skill-progress" style="width: 85%">
+                                        <span class="skill-percent">85%</span>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="skill-card">
+                            <div class="skill-icon"><i class="fab fa-js"></i></div>
+                            <div class="skill-info">
+                                <h3>JavaScript</h3>
+                                <div class="skill-bar">
+                                    <div class="skill-progress" style="width: 80%">
+                                        <span class="skill-percent">80%</span>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="skill-card">
+                            <div class="skill-icon"><i class="fab fa-angular"></i></div>
+                            <div class="skill-info">
+                                <h3>Angular</h3>
+                                <div class="skill-bar">
+                                    <div class="skill-progress" style="width: 85%">
+                                        <span class="skill-percent">85%</span>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="skill-card">
+                            <div class="skill-icon"><i class="fab fa-react"></i></div>
+                            <div class="skill-info">
+                                <h3>React</h3>
+                                <div class="skill-bar">
+                                    <div class="skill-progress" style="width: 35%">
+                                        <span class="skill-percent">35%</span>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="skill-card">
+                            <div class="skill-icon"><i class="fab fa-bootstrap"></i></div>
+                            <div class="skill-info">
+                                <h3>Bootstrap</h3>
+                                <div class="skill-bar">
+                                    <div class="skill-progress" style="width: 80%">
+                                        <span class="skill-percent">80%</span>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
                     </div>
                 </div>
-                <div class="skill-card">
-                    <i class="fab fa-css3-alt"></i>
-                    <h3>CSS3</h3>
-                    <div class="skill-bar">
-                        <div class="skill-progress" style="width: 85%"></div>
+
+                <!-- Backend Skills -->
+                <div class="skills-panel" id="backend">
+                    <div class="skills-grid">
+                        <div class="skill-card">
+                            <div class="skill-icon"><i class="fab fa-node"></i></div>
+                            <div class="skill-info">
+                                <h3>Node.js</h3>
+                                <div class="skill-bar">
+                                    <div class="skill-progress" style="width: 70%">
+                                        <span class="skill-percent">70%</span>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="skill-card">
+                            <div class="skill-icon"><i class="fab fa-php"></i></div>
+                            <div class="skill-info">
+                                <h3>PHP</h3>
+                                <div class="skill-bar">
+                                    <div class="skill-progress" style="width: 75%">
+                                        <span class="skill-percent">75%</span>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="skill-card">
+                            <div class="skill-icon"><i class="fas fa-database"></i></div>
+                            <div class="skill-info">
+                                <h3>MS SQL Server</h3>
+                                <div class="skill-bar">
+                                    <div class="skill-progress" style="width: 85%">
+                                        <span class="skill-percent">85%</span>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="skill-card">
+                            <div class="skill-icon"><i class="fas fa-database"></i></div>
+                            <div class="skill-info">
+                                <h3>MySQL</h3>
+                                <div class="skill-bar">
+                                    <div class="skill-progress" style="width: 75%">
+                                        <span class="skill-percent">75%</span>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="skill-card">
+                            <div class="skill-icon"><i class="fas fa-code"></i></div>
+                            <div class="skill-info">
+                                <h3>REST API</h3>
+                                <div class="skill-bar">
+                                    <div class="skill-progress" style="width: 85%">
+                                        <span class="skill-percent">85%</span>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="skill-card">
+                            <div class="skill-icon"><i class="fas fa-lock"></i></div>
+                            <div class="skill-info">
+                                <h3>JWT Auth</h3>
+                                <div class="skill-bar">
+                                    <div class="skill-progress" style="width: 75%">
+                                        <span class="skill-percent">75%</span>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
                     </div>
                 </div>
-                <div class="skill-card">
-                    <i class="fab fa-js"></i>
-                    <h3>JavaScript</h3>
-                    <div class="skill-bar">
-                        <div class="skill-progress" style="width: 80%"></div>
-                    </div>
-                </div>
-                <div class="skill-card">
-                    <i class="fab fa-angular"></i>
-                    <h3>Angular</h3>
-                    <div class="skill-bar">
-                        <div class="skill-progress" style="width: 85%"></div>
-                    </div>
-                </div>
-                <div class="skill-card">
-                    <i class="fab fa-react"></i>
-                    <h3>React</h3>
-                    <div class="skill-bar">
-                        <div class="skill-progress" style="width: 35%"></div>
-                    </div>
-                </div>
-                <div class="skill-card">
-                    <i class="fab fa-bootstrap"></i>
-                    <h3>Bootstrap</h3>
-                    <div class="skill-bar">
-                        <div class="skill-progress" style="width: 80%"></div>
+
+                <!-- Tools Skills -->
+                <div class="skills-panel" id="tools">
+                    <div class="skills-grid">
+                        <div class="skill-card">
+                            <div class="skill-icon"><i class="fab fa-git-alt"></i></div>
+                            <div class="skill-info">
+                                <h3>Git</h3>
+                                <div class="skill-bar">
+                                    <div class="skill-progress" style="width: 80%">
+                                        <span class="skill-percent">80%</span>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="skill-card">
+                            <div class="skill-icon"><i class="fas fa-code-branch"></i></div>
+                            <div class="skill-info">
+                                <h3>GitHub</h3>
+                                <div class="skill-bar">
+                                    <div class="skill-progress" style="width: 75%">
+                                        <span class="skill-percent">75%</span>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="skill-card">
+                            <div class="skill-icon"><i class="fas fa-map-marked-alt"></i></div>
+                            <div class="skill-info">
+                                <h3>Google Maps API</h3>
+                                <div class="skill-bar">
+                                    <div class="skill-progress" style="width: 70%">
+                                        <span class="skill-percent">70%</span>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="skill-card">
+                            <div class="skill-icon"><i class="fas fa-chart-pie"></i></div>
+                            <div class="skill-info">
+                                <h3>Charts & Graphs</h3>
+                                <div class="skill-bar">
+                                    <div class="skill-progress" style="width: 75%">
+                                        <span class="skill-percent">75%</span>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="skill-card">
+                            <div class="skill-icon"><i class="fas fa-envelope"></i></div>
+                            <div class="skill-info">
+                                <h3>Email Automation</h3>
+                                <div class="skill-bar">
+                                    <div class="skill-progress" style="width: 70%">
+                                        <span class="skill-percent">70%</span>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="skill-card">
+                            <div class="skill-icon"><i class="fas fa-bug"></i></div>
+                            <div class="skill-info">
+                                <h3>Debugging</h3>
+                                <div class="skill-bar">
+                                    <div class="skill-progress" style="width: 90%">
+                                        <span class="skill-percent">90%</span>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
                     </div>
                 </div>
             </div>
         </div>
+    </section>
 
-        <div class="skill-category">
-            <h3>Backend & Databases</h3>
-            <div class="skills-grid">
-                <div class="skill-card">
-                    <i class="fab fa-node"></i>
-                    <h3>Node.js</h3>
-                    <div class="skill-bar">
-                        <div class="skill-progress" style="width: 70%"></div>
-                    </div>
-                </div>
-                <div class="skill-card">
-                    <i class="fab fa-php"></i>
-                    <h3>PHP</h3>
-                    <div class="skill-bar">
-                        <div class="skill-progress" style="width: 75%"></div>
-                    </div>
-                </div>
-                <div class="skill-card">
-                    <i class="fas fa-database"></i>
-                    <h3>MS SQL Server</h3>
-                    <div class="skill-bar">
-                        <div class="skill-progress" style="width: 85%"></div>
-                    </div>
-                </div>
-                <div class="skill-card">
-                    <i class="fas fa-database"></i>
-                    <h3>MySQL</h3>
-                    <div class="skill-bar">
-                        <div class="skill-progress" style="width: 75%"></div>
-                    </div>
-                </div>
-            </div>
-        </div>
-
-        <div class="skill-category">
-            <h3>Tools & Others</h3>
-            <div class="skills-grid">
-                <div class="skill-card">
-                    <i class="fab fa-git-alt"></i>
-                    <h3>Git</h3>
-                    <div class="skill-bar">
-                        <div class="skill-progress" style="width: 80%"></div>
-                    </div>
-                </div>
-                <div class="skill-card">
-                    <i class="fas fa-code"></i>
-                    <h3>REST API</h3>
-                    <div class="skill-bar">
-                        <div class="skill-progress" style="width: 85%"></div>
-                    </div>
-                </div>
-                <div class="skill-card">
-                    <i class="fas fa-lock"></i>
-                    <h3>JWT</h3>
-                    <div class="skill-bar">
-                        <div class="skill-progress" style="width: 75%"></div>
-                    </div>
-                </div>
-                <div class="skill-card">
-                    <i class="fas fa-map-marked-alt"></i>
-                    <h3>Google Maps API</h3>
-                    <div class="skill-bar">
-                        <div class="skill-progress" style="width: 70%"></div>
-                    </div>
-                </div>
-            </div>
-        </div>
-    </div>
-</section>
-
-    <!-- Experience Section - NEW -->
+    <!-- Experience Section -->
     <section id="experience" class="experience">
         <div class="container">
-            <h2 class="section-title">Work Experience</h2>
-            <div class="experience-card">
-                <h3>Web Developer</h3>
-                <h4>Indus Novateur Softech Pvt Ltd</h4>
-                <p class="date">July 2023 - Present</p>
-                <ul>
-                    <li>Developed web applications using Angular, Node.js, PHP, and SQL Server</li>
-                    <li>Mentored junior developers, assisting them in overcoming complex programming challenges</li>
-                    <li>Collaborated with project managers to define project scope, set timelines, and ensure on-time delivery</li>
-                    <li>Provided technical support to resolve customer issues related to web development projects</li>
-                </ul>
+            <div class="section-header">
+                <span class="section-tag">Experience</span>
+                <h2 class="section-title">Work Journey</h2>
+                <div class="section-line"></div>
+            </div>
+            <div class="timeline">
+                <div class="timeline-item">
+                    <div class="timeline-dot"></div>
+                    <div class="timeline-content">
+                        <div class="timeline-date">2023 - Present</div>
+                        <h3>Web Developer</h3>
+                        <h4>Indus Novateur Softech Pvt Ltd</h4>
+                        <ul class="timeline-list">
+                            <li>
+                                <i class="fas fa-check-circle"></i>
+                                Developed web applications using Angular, Node.js, PHP, and SQL Server
+                            </li>
+                            <li>
+                                <i class="fas fa-check-circle"></i>
+                                Mentored junior developers and provided technical guidance
+                            </li>
+                            <li>
+                                <i class="fas fa-check-circle"></i>
+                                Collaborated with project managers for timely delivery
+                            </li>
+                            <li>
+                                <i class="fas fa-check-circle"></i>
+                                Provided technical support and resolved customer issues
+                            </li>
+                        </ul>
+                    </div>
+                </div> 
             </div>
         </div>
     </section>
 
-    <!-- Projects Section - FIXED -->
+    <!-- Projects Section -->
     <section id="projects" class="projects">
         <div class="container">
-            <h2 class="section-title">My Projects</h2>
+            <div class="section-header">
+                <span class="section-tag">Portfolio</span>
+                <h2 class="section-title">Featured Projects</h2>
+                <div class="section-line"></div>
+            </div>
+            <div class="project-filters">
+                <button class="filter-btn active" data-filter="all">All</button>
+                <button class="filter-btn" data-filter="fullstack">Full Stack</button>
+                <button class="filter-btn" data-filter="frontend">Frontend</button>
+                <button class="filter-btn" data-filter="backend">Backend</button>
+            </div>
             <div class="projects-grid">
-                <!-- Project 1 -->
-                <div class="project-card">
-                    <img src="src/SILKROUTES.jpg" alt="SILK ROUTES INTL CO.LLC" />
-                    <h3>Stock Management & Tracking Portal</h3>
-                    <h4>SILK ROUTES INTL CO.LLC - Oman</h4>
-                    <p class="project-date">Aug 2023 - Jan 2024</p>
-                    <p>A full-stack inventory management system for tracking SIM cards and devices across stock inward, stock transfer, customer enquiry, service, and installation workflows. The system maintains real-time stock information and provides dashboards, reports, authorization, and centralized master management.</p>
-                    <p class="tech-stack"><strong>Tech:</strong> Angular • Express.js • Node.js • MS SQL Server • JWT • REST API • IIS</p>
-                    <div class="project-links">
-                        <a href="http://silk.fortiddns.com:2804/" target="_blank"><i class="fas fa-external-link-alt"></i> Live Demo</a>
+                <div class="project-card" data-category="fullstack">
+                    <div class="project-image">
+                        <img src="src/SILKROUTES.jpg" alt="Stock Management" />
+                        <div class="project-overlay">
+                            <div class="project-links">
+                                <a href="http://silk.fortiddns.com:2804/" target="_blank">
+                                    <i class="fas fa-external-link-alt"></i>
+                                </a>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="project-info">
+                        <span class="project-tag">Full Stack</span>
+                        <h3>Stock Management Portal</h3>
+                        <p>SILK ROUTES INTL CO.LLC - Oman</p>
+                        <div class="project-tech">
+                            <span>Angular</span>
+                            <span>Node.js</span>
+                            <span>MS SQL</span>
+                        </div>
                     </div>
                 </div>
 
-                <!-- Project 2 -->
-                <div class="project-card">
-                    <img src="src/Indus.png" alt="Indus Novateur" />
-                    <h3>SSP – Ticket Management Portal</h3>
-                    <h4>Indus Novateur - India</h4>
-                    <p class="project-date">Oct 2023 - Mar 2024</p>
-                    <p>A comprehensive customer support and ticket management platform developed for managing software-product-related customer issues from ticket creation to final resolution. Customers can create tickets based on the relevant product, module, and issue category.</p>
-                    <p class="tech-stack"><strong>Tech:</strong> Angular • Express.js • Node.js • MS SQL Server • JWT • REST API • IIS</p>
-                    <div class="project-links">
-                        <a href="https://ssp.indusnovateur.in/" target="_blank"><i class="fas fa-external-link-alt"></i> Live Demo</a>
+                <div class="project-card" data-category="fullstack">
+                    <div class="project-image">
+                        <img src="src/Indus.png" alt="Ticket Management" />
+                        <div class="project-overlay">
+                            <div class="project-links">
+                                <a href="https://ssp.indusnovateur.in/" target="_blank">
+                                    <i class="fas fa-external-link-alt"></i>
+                                </a>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="project-info">
+                        <span class="project-tag">Full Stack</span>
+                        <h3>SSP Ticket Management</h3>
+                        <p>Indus Novateur - India</p>
+                        <div class="project-tech">
+                            <span>Angular</span>
+                            <span>Node.js</span>
+                            <span>MS SQL</span>
+                        </div>
                     </div>
                 </div>
 
-                <!-- Project 3 -->
-                <div class="project-card">
-                    <img src="src/sterna-security.jpeg" alt="Sterna Security" />
-                    <h3>Employee Self-Service (ESS) Portal</h3>
-                    <h4>Sterna Security Devices - India</h4>
-                    <p class="project-date">Aug 2023 - Nov 2023</p>
-                    <p>A centralized Employee Self-Service platform developed to simplify employee HR activities. Employees can submit leave, permission, and on-duty requests, view attendance information, and track request status.</p>
-                    <p class="tech-stack"><strong>Tech:</strong> PHP • jQuery • MS SQL Server • ODBC • XAMPP</p>
-                    <div class="project-links">
-                        <a href="https://attendance.sternadevices.in:8082/SternaSSD_Live/index.php" target="_blank"><i class="fas fa-external-link-alt"></i> Live Demo</a>
+                <div class="project-card" data-category="fullstack">
+                    <div class="project-image">
+                        <img src="src/sterna-security.jpeg" alt="ESS Portal" />
+                        <div class="project-overlay">
+                            <div class="project-links">
+                                <a href="https://attendance.sternadevices.in:8082/SternaSSD_Live/index.php" target="_blank">
+                                    <i class="fas fa-external-link-alt"></i>
+                                </a>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="project-info">
+                        <span class="project-tag">Full Stack</span>
+                        <h3>Employee Self-Service</h3>
+                        <p>Sterna Security - India</p>
+                        <div class="project-tech">
+                            <span>PHP</span>
+                            <span>jQuery</span>
+                            <span>MS SQL</span>
+                        </div>
                     </div>
                 </div>
 
-                <!-- Project 4 -->
-                <div class="project-card">
-                    <img src="src/Hyundai_AutoEver_logo.png" alt="Hyundai AutoEver" />
-                    <h3>Hyundai AutoEver – E-Procurement Portal</h3>
-                    <h4>Sterna Security Devices - India</h4>
-                    <p>E-Procurement and Bidding Portal for Hyundai AutoEver</p>
-                    <p class="tech-stack"><strong>Tech:</strong> Angular • MS SQL Server • IIS • PHP • Laravel</p>
-                    <div class="project-links">
-                        <a href="https://scm.haei.net/login" target="_blank"><i class="fas fa-external-link-alt"></i> Live Demo</a>
+                <div class="project-card" data-category="fullstack">
+                    <div class="project-image">
+                        <img src="src/Hyundai_AutoEver_logo.png" alt="E-Procurement" />
+                        <div class="project-overlay">
+                            <div class="project-links">
+                                <a href="https://scm.haei.net/login" target="_blank">
+                                    <i class="fas fa-external-link-alt"></i>
+                                </a>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="project-info">
+                        <span class="project-tag">Full Stack</span>
+                        <h3>E-Procurement Portal</h3>
+                        <p>Hyundai AutoEver - India</p>
+                        <div class="project-tech">
+                            <span>Angular</span>
+                            <span>PHP</span>
+                            <span>MS SQL</span>
+                        </div>
                     </div>
                 </div>
             </div>
         </div>
     </section>
 
-    <!-- Education Section - NEW -->
+    <!-- Education Section -->
     <section id="education" class="education">
         <div class="container">
-            <h2 class="section-title">Education</h2>
+            <div class="section-header">
+                <span class="section-tag">Education</span>
+                <h2 class="section-title">Academic Background</h2>
+                <div class="section-line"></div>
+            </div>
             <div class="education-grid">
                 <div class="education-card">
-                    <h3>MCA - Master of Computer Applications</h3>
-                    <h4>Hindusthan College of Arts & Science, Coimbatore</h4>
-                    <p class="date">2021 - 2023</p>
-                    <p>Percentage: 82%</p>
+                    <div class="edu-icon"><i class="fas fa-graduation-cap"></i></div>
+                    <h3>MCA</h3>
+                    <h4>Master of Computer Applications</h4>
+                    <p>Hindusthan College of Arts & Science</p>
+                    <span class="edu-year">2021 - 2023</span>
+                    <div class="edu-percentage">82%</div>
                 </div>
                 <div class="education-card">
-                    <h3>B.Sc. Information Technology</h3>
-                    <h4>The Madura College, Madurai</h4>
-                    <p class="date">2017 - 2020</p>
-                    <p>Percentage: 59.67%</p>
+                    <div class="edu-icon"><i class="fas fa-graduation-cap"></i></div>
+                    <h3>B.Sc. IT</h3>
+                    <h4>Information Technology</h4>
+                    <p>The Madura College</p>
+                    <span class="edu-year">2017 - 2020</span>
+                    <div class="edu-percentage">59.67%</div>
                 </div>
                 <div class="education-card">
+                    <div class="edu-icon"><i class="fas fa-school"></i></div>
                     <h3>HSC</h3>
-                    <h4>Sourashtra Higher Secondary School, Madurai</h4>
-                    <p class="date">2016 - 2017</p>
-                    <p>Percentage: 71%</p>
+                    <h4>Higher Secondary</h4>
+                    <p>Sourashtra Higher Secondary School</p>
+                    <span class="edu-year">2016 - 2017</span>
+                    <div class="edu-percentage">71%</div>
                 </div>
                 <div class="education-card">
+                    <div class="edu-icon"><i class="fas fa-school"></i></div>
                     <h3>SSLC</h3>
-                    <h4>Vandiyur Higher School, Madurai</h4>
-                    <p class="date">2014 - 2015</p>
-                    <p>Percentage: 87.6%</p>
+                    <h4>Secondary School</h4>
+                    <p>Vandiyur Higher School</p>
+                    <span class="edu-year">2014 - 2015</span>
+                    <div class="edu-percentage">87.6%</div>
                 </div>
             </div>
         </div>
@@ -304,21 +623,81 @@
     <!-- Contact Section -->
     <section id="contact" class="contact">
         <div class="container">
-            <h2 class="section-title">Contact Me</h2>
-            <div class="contact-container">
-                <form id="contact-form">
-                    <input type="text" placeholder="Your Name" required />
-                    <input type="email" placeholder="Your Email" required />
-                    <textarea placeholder="Your Message" rows="5" required></textarea>
-                    <button type="submit" class="btn-primary">Send Message</button>
+            <div class="section-header">
+                <span class="section-tag">Contact</span>
+                <h2 class="section-title">Get In Touch</h2>
+                <div class="section-line"></div>
+            </div>
+            <div class="contact-content">
+                <div class="contact-info">
+                    <div class="contact-item">
+                        <div class="contact-icon"><i class="fas fa-envelope"></i></div>
+                        <div>
+                            <h4>Email</h4>
+                            <p>arunpandi.webdev@gmail.com</p>
+                        </div>
+                    </div>
+                    <div class="contact-item">
+                        <div class="contact-icon"><i class="fas fa-map-marker-alt"></i></div>
+                        <div>
+                            <h4>Location</h4>
+                            <p>Coimbatore, India</p>
+                        </div>
+                    </div>
+                    <div class="contact-item">
+                        <div class="contact-icon"><i class="fab fa-github"></i></div>
+                        <div>
+                            <h4>GitHub</h4>
+                            <p>github.com/arunpandi17</p>
+                        </div>
+                    </div>
+                    <div class="contact-item">
+                        <div class="contact-icon"><i class="fab fa-linkedin-in"></i></div>
+                        <div>
+                            <h4>LinkedIn</h4>
+                            <p>Arun Pandi S</p>
+                        </div>
+                    </div>
+                </div>
+                <form id="contact-form" class="contact-form">
+                    <div class="form-group">
+                        <input type="text" placeholder="Your Name" required />
+                        <i class="fas fa-user"></i>
+                    </div>
+                    <div class="form-group">
+                        <input type="email" placeholder="Your Email" required />
+                        <i class="fas fa-envelope"></i>
+                    </div>
+                    <div class="form-group">
+                        <textarea placeholder="Your Message" rows="5" required></textarea>
+                        <i class="fas fa-pencil-alt"></i>
+                    </div>
+                    <button type="submit" class="btn-primary">
+                        <i class="fas fa-paper-plane"></i>
+                        Send Message
+                    </button>
                 </form>
             </div>
         </div>
     </section>
 
     <!-- Footer -->
-    <footer>
-        <p>&copy; 2026 Arun Pandi S. All rights reserved.</p>
+    <footer class="footer">
+        <div class="container">
+            <div class="footer-content">
+                <div class="footer-brand">
+                    <h2>&lt;Arun Pandi/&gt;</h2>
+                    <p>Building the future, one line of code at a time.</p>
+                </div>
+                <div class="footer-social">
+                    <a href="https://github.com/arunpandi17" target="_blank"><i class="fab fa-github"></i></a>
+                    <a href="https://in.linkedin.com/in/arun-pandi-s-a4a416253" target="_blank"><i class="fab fa-linkedin-in"></i></a>
+                    <a href="https://x.com/arunpandi68" target="_blank"><i class="fab fa-twitter"></i></a>
+                    <a href="mailto:arunpandi.webdev@gmail.com"><i class="fas fa-envelope"></i></a>
+                </div>
+                <p class="footer-copy">&copy; 2026 Arun Pandi S. All rights reserved.</p>
+            </div>
+        </div>
     </footer>
 
     <script src="script.js"></script>
